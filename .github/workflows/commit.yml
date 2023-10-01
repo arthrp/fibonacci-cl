@@ -31,4 +31,7 @@ jobs:
         with: 
           packages: sbcl
           version: 1.0
+      
+      - name: Build
+        run: sbcl --eval '(compile-file "fib.lisp")' --quit
 
